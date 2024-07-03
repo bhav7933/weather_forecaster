@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecaster</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Weather Forecaster!</h1>
+        <p>Just Enter the City you want the weather report for and click on the button! It's that simple!</p>
+        <form id="weatherForm">
+            <input type="text" id="cityName" placeholder="Enter the name of the City" required>
+            <button type="submit">Get Weather Report</button>
+        </form>
+        <pre id="weatherReport"></pre>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
